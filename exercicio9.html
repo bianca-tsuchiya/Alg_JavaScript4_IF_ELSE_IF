@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Algoritmos</title>
+</head>
+<body>
+    <h1>ATIVIDADE: Javascript - Estrutura de Decisão IF-ELSE</h1>
+    <h2>Exercício 9</h2>
+    <h6>Bianca Namie Hara Tsuchiya - RA: 01222110 <br> Data: 15/09/2022</h6>
+    <br>
+    <br>
+    Você já clicou <b><span id="span_cliques">0</span></b> vezes
+    <br><br>
+    <div id="div_resultado"></div>
+    <br><br>
+    <button onclick="contar_cliques()">Clica Aqui!</button>
+</body>
+</html>
+
+<script>
+    var contador_cliques = 0
+
+    function contar_cliques(){
+        contador_cliques += 1
+
+        span_cliques.innerHTML = contador_cliques
+
+        if(contador_cliques<5)
+        {
+            div_resultado.innerHTML = "Dedo fraquinho, hein ;("
+        }
+        else if(contador_cliques<=10)
+        {
+            div_resultado.innerHTML = "Na média - não me impressiona ..."
+        }
+        else if(contador_cliques<=15)
+        {
+            div_resultado.innerHTML = "Está treinando em casa !"
+        }
+        else {
+            div_resultado.innerHTML = "Mestre dos cliques !!!"
+        }
+            
+    }
+</script>

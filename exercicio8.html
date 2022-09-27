@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Algoritmos</title>
+</head>
+<body>
+    <h1>ATIVIDADE: Javascript - Estrutura de Decisão IF-ELSE</h1>
+    <h2>Exercício 7</h2>
+    <h6>Bianca Namie Hara Tsuchiya - RA: 01222110 <br> Data: 15/09/2022</h6>
+    <p>Quantos pães franceses você tem comido por dia?</p>
+    <input type="number" id="input_qtd_paes">
+    <br><br>
+    <p>Quantos pacotes de bolacha recheada o usuário tem comido por dia?</p>
+    <input type="number" id="input_qtd_pacotes">
+    <br><br>
+    <p>Quantos copos de achocolatado você tem tomado por dia?</p>
+    <input type="number" id="input_qtd_copos">
+    <br><br>
+    <button onclick="verificar_calorias()">Verificar Calorias</button>
+    <br><br>
+    <div id="div_resultado"></div>
+</body>
+</html>
+
+<script>
+    function verificar_calorias(){
+        var cal_pao_frances = Number(input_qtd_paes.value) * 50
+        var cal_pacotes_bolacha = Number(input_qtd_pacotes.value) * 80
+        var cal_copos_achocolatado = Number(input_qtd_copos.value) * 70 
+        
+        var total_calorias = cal_pao_frances + cal_pacotes_bolacha + cal_copos_achocolatado
+
+        if(total_calorias > 400)
+        {
+            div_resultado.innerHTML =  "Forte tendência á ganhar peso !"
+        }
+        else if(total_calorias>=200)
+        {
+            div_resultado.innerHTML = "Nem lá, nem cá. Vai manter a forma."
+        }
+        else 
+        {
+            div_resultado.innerHTML = "Está perdendo peso"
+        }
+    }
+</script>

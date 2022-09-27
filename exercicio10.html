@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Algoritmos</title>
+</head>
+
+<body>
+    <h1>ATIVIDADE: Javascript - Estrutura de Decisão IF-ELSE</h1>
+    <h2>Exercício 9</h2>
+    <h6>Bianca Namie Hara Tsuchiya - RA: 01222110 <br> Data: 15/09/2022</h6>
+    <br>
+    <button onclick="calcular_nota1()">Nota 1</button>
+    <button onclick="calcular_nota2()">Nota 2</button>
+    <button onclick="calcular_nota3()">Nota 3</button>
+    <button onclick="calcular_nota4()">Nota 4</button>
+    <button onclick="calcular_nota5()">Nota 5</button>
+    <br>
+    <br>
+    Sua avaliação: <b><span id="span_resultado"></span></b>
+    <br><br>
+    <div id="div_imagem"></div>
+
+</body>
+
+</html>
+
+<script>
+    var soma = 0;
+    var media = 0;
+    var qtd_notas = 0;
+
+    function calcular_nota1() {
+        soma += 1;
+        qtd_notas += 1;
+        media = soma / qtd_notas;
+        span_resultado.innerHTML = media.toFixed(1);
+
+        if (media < 2) {
+            div_imagem.innerHTML = `<img src="https://emojitool.com/img/whatsapp/2.21.23.23/loudly-crying-face-1082.png" width="100px">`
+        }
+        else if (media <= 3) {
+            div_imagem.innerHTML = `<img src="https://cdn-0.emojis.wiki/emoji-pics/whatsapp/neutral-face-whatsapp.png" width="100px">`
+        }
+        else if (media <= 4.5) {
+            div_imagem.innerHTML = `<img src="https://cdn.pixabay.com/photo/2020/12/18/01/27/smile-5840910_960_720.png" width="100px">`
+        }
+        else {
+            div_imagem.innerHTML = `<img src="https://cdn.pixabay.com/photo/2020/12/27/20/25/smile-5865209_960_720.png" width="100px">`
+        }
+    }
+
+    function calcular_nota2() {
+        soma += 2;
+        qtd_notas += 1;
+        media = soma / qtd_notas;
+        span_resultado.innerHTML = media.toFixed(1);
+
+        if (media < 2) {
+            div_imagem.innerHTML = `<img src="https://emojitool.com/img/whatsapp/2.21.23.23/loudly-crying-face-1082.png" width="100px">`
+        }
+        else if (media <= 3) {
+            div_imagem.innerHTML = `<img src="https://cdn-0.emojis.wiki/emoji-pics/whatsapp/neutral-face-whatsapp.png" width="100px">`
+        }
+        else if (media <= 4.5) {
+            div_imagem.innerHTML = `<img src="https://cdn.pixabay.com/photo/2020/12/18/01/27/smile-5840910_960_720.png" width="100px">`
+        }
+        else {
+            div_imagem.innerHTML = `<img src="https://cdn.pixabay.com/photo/2020/12/27/20/25/smile-5865209_960_720.png" width="100px">`
+        }
+        
+    }
+
+    function calcular_nota3() {
+        soma += 3;
+        qtd_notas += 1;
+        media = soma / qtd_notas;
+        span_resultado.innerHTML = media.toFixed(1);
+
+        if (media < 2) {
+            div_imagem.innerHTML = `<img src="https://emojitool.com/img/whatsapp/2.21.23.23/loudly-crying-face-1082.png" width="100px">`
+        }
+        else if (media <= 3) {
+            div_imagem.innerHTML = `<img src="https://cdn-0.emojis.wiki/emoji-pics/whatsapp/neutral-face-whatsapp.png" width="100px">`
+        }
+        else if (media <= 4.5) {
+            div_imagem.innerHTML = `<img src="https://cdn.pixabay.com/photo/2020/12/18/01/27/smile-5840910_960_720.png" width="100px">`
+        }
+        else {
+            div_imagem.innerHTML = `<img src="https://cdn.pixabay.com/photo/2020/12/27/20/25/smile-5865209_960_720.png" width="100px">`
+        }
+    }
+
+    function calcular_nota4() {
+        soma += 4;
+        qtd_notas += 1;
+        media = soma / qtd_notas;
+        span_resultado.innerHTML = media.toFixed(1);
+
+        if (media < 2) {
+            div_imagem.innerHTML = `<img src="https://emojitool.com/img/whatsapp/2.21.23.23/loudly-crying-face-1082.png" width="100px">`
+        }
+        else if (media <= 3) {
+            div_imagem.innerHTML = `<img src="https://cdn-0.emojis.wiki/emoji-pics/whatsapp/neutral-face-whatsapp.png" width="100px">`
+        }
+        else if (media <= 4.5) {
+            div_imagem.innerHTML = `<img src="https://cdn.pixabay.com/photo/2020/12/18/01/27/smile-5840910_960_720.png" width="100px">`
+        }
+        else {
+            div_imagem.innerHTML = `<img src="https://cdn.pixabay.com/photo/2020/12/27/20/25/smile-5865209_960_720.png" width="100px">`
+        }
+    }
+
+    function calcular_nota5() {
+        soma += 5;
+        qtd_notas += 1;
+        media = soma / qtd_notas;
+        span_resultado.innerHTML = media.toFixed(1);
+
+        if (media < 2) {
+            div_imagem.innerHTML = `<img src="https://emojitool.com/img/whatsapp/2.21.23.23/loudly-crying-face-1082.png" width="100px">`
+        }
+        else if (media <= 3) {
+            div_imagem.innerHTML = `<img src="https://cdn-0.emojis.wiki/emoji-pics/whatsapp/neutral-face-whatsapp.png" width="100px">`
+        }
+        else if (media <= 4.5) {
+            div_imagem.innerHTML = `<img src="https://cdn.pixabay.com/photo/2020/12/18/01/27/smile-5840910_960_720.png" width="100px">`
+        }
+        else {
+            div_imagem.innerHTML = `<img src="https://cdn.pixabay.com/photo/2020/12/27/20/25/smile-5865209_960_720.png" width="100px">`
+        }
+    }
+</script>

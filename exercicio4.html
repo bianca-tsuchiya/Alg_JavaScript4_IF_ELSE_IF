@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Algoritmos</title>
+</head>
+<body>
+    <h1>ATIVIDADE: Javascript - Estrutura de Decisão IF-ELSE</h1>
+    <h2>Exercício 4</h2>
+    <h6>Bianca Namie Hara Tsuchiya - RA: 01222110 <br> Data: 15/09/2022</h6>
+    <br>
+    <p>Digite o número de partidas que o atacante jogou:</p>
+    <input type="number" id="input_num_partidas">
+    <br><br>
+    <p>Digite a quantidade de gols marcados pelo atacante:</p>
+    <input type="number" id="input_qtd_gols">
+    <br><br>
+    <button onclick="estudar_atacante()">Estudar atacante</button>
+    <br><br>
+    <div id="div_resultado"></div>
+</body>
+</html>
+
+<script>
+    function estudar_atacante(){
+        var media_atacante = Number(input_qtd_gols.value) / Number(input_num_partidas.value)
+
+        var resultado;
+
+        if(media_atacante<0.2){
+            resultado =             
+            `
+                Melhor mudar de posição
+                <br><br>
+                <img src="https://sagresonline.com.br/wp-content/uploads/2020/11/roberson-cruzeiro.jpg" alt="Roberson" width="600px">
+            `
+        }
+            else if(media_atacante<=0.6){
+
+                resultado =
+                `
+                    Atacante mediano
+                    <br><br>
+                    <img src="https://images2.minutemediacdn.com/image/upload/c_crop,w_3000,h_1687,x_0,y_311/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/90min_pt-BR_international_web/01g1net37s8gtr7epmpq.jpg" alt="Luvannor" width="600px">
+                `
+            }
+            else{
+                resultado = 
+                `
+                    Atacante de futuro
+                    <br><br>
+                    <img src="https://cruzeiropedia.org/images/thumb/a/a4/Dirceu_Lopes.png/300px-Dirceu_Lopes.png" alt="Dirceu Lopes" width="600px">
+                `
+            }
+        
+
+        div_resultado.innerHTML =  resultado
+
+    }
+
+</script>

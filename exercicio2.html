@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Algoritmos</title>
+</head>
+<body>
+    <h1>Javascript - EStrutura de Decisão IF-ELSE-IF</h1>
+    <h2>Exercício 2</h2>
+    <h6>Bianca Namie Hara Tsuchiya - RA: 01222110 <br> Data: 15/09/2022</h6>
+    <p>Digite a renda familiar mensal:</p>
+    <input type="number" id="input_renda">
+    <br><br>
+    <button onclick="verificar_situacao()">Verificar Situação</button>
+    <br><br>
+    <div id="div_resultado"></div>
+</body>
+</html>
+
+<script>
+    function verificar_situacao(){
+        var renda = Number(input_renda.value)
+        if(renda > 9500){
+            div_resultado.innerHTML = "Classe A"
+        }
+        else if(renda > 2500)
+        {
+            div_resultado.innerHTML = "Classe B"
+        }
+        else if(renda > 900)
+        {
+            div_resultado.innerHTML = "Classe C"
+        }
+        else if(renda > 250)
+        {
+            div_resultado.innerHTML = "Classe D"
+        }
+        else
+        {
+            div_resultado.innerHTML = "Classe E"
+        }
+    }
+</script>

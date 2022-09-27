@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Algoritmos</title>
+</head>
+
+<body>
+    <h1>ATIVIDADE: Javascript - Estrutura de Decisão IF-ELSE</h1>
+    <h2>Exercício 6</h2>
+    <h6>Bianca Namie Hara Tsuchiya - RA: 01222110 <br> Data: 15/09/2022</h6>
+    <p>Digite o peso do paciente (crianças de 5 anos): </p>
+    <input type="number" id="input_peso">
+    <br><br>
+    <button onclick="avaliar_peso()">Avaliar Peso</button>
+</body>
+
+</html>
+
+<script>
+    function avaliar_peso() {
+        var peso_paciente = Number(input_peso.value)
+
+        if (peso_paciente == 18.3) {
+            alert("Peso Perfeito")
+        }
+        else if (peso_paciente <= 13.5) {
+            alert("Abaixo do Peso")
+        }
+        else if (peso_paciente <= 21.2) {
+            alert("Peso na Média")
+        }
+        else {
+            alert("Acima do Peso")
+        }
+    }
+
+</script>

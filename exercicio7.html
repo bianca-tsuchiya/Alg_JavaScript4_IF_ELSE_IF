@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Algoritmos</title>
+</head>
+
+<body>
+    <h1>ATIVIDADE: Javascript - Estrutura de Decisão IF-ELSE</h1>
+    <h2>Exercício 7</h2>
+    <h6>Bianca Namie Hara Tsuchiya - RA: 01222110 <br> Data: 15/09/2022</h6>
+    <p>Digite a nota do aluno:</p>
+    <input type="number" id="input_nota_aluno">
+    <br><br>
+    <button onclick="classificar_aluno()">Classificar Aluno</button>
+</body>
+</html>
+<script>
+    function classificar_aluno(){
+        var nota_aluno = Number(input_nota_aluno.value)
+
+        if(nota_aluno<5)
+        {
+            alert("Aluno precisa de muita ajuda!")
+        }
+        else if(nota_aluno<=7)
+        {
+            alert("Aluno na média")
+        }
+        else if(nota_aluno<=9.5)
+        {
+            alert("Aluno acima da média")
+        }
+        else
+        {
+            alert("Aluno fora da curva!")
+        }
+    }
+</script>
